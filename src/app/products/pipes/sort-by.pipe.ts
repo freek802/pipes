@@ -6,6 +6,8 @@ import { Hero } from '../interfaces/hero.interface';
 })
 export class SortByPipe implements PipeTransform {
   transform(heros: Hero[], sortBy?: keyof Hero | ''): Hero[] {
+    console.log(sortBy);
+
     switch (sortBy) {
       case 'name':
         return heros.sort((a, b) => (a.name > b.name ? 1 : -1));

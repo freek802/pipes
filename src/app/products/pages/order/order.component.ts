@@ -28,7 +28,22 @@ export class OrderComponent {
       color: Color.green,
     },
     {
-      name: 'Flash',
+      name: 'Anastacio',
+      canFly: false,
+      color: Color.red,
+    },
+    {
+      name: 'Pancho',
+      canFly: true,
+      color: Color.black,
+    },
+    {
+      name: 'MAria',
+      canFly: false,
+      color: Color.blue,
+    },
+    {
+      name: 'Petra',
       canFly: false,
       color: Color.green,
     },
