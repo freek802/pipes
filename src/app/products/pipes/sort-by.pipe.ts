@@ -12,9 +12,9 @@ export class SortByPipe implements PipeTransform {
       case 'name':
         return heros.sort((a, b) => (a.name > b.name ? 1 : -1));
       case 'canFly':
-        return heros.sort((a, b) => (a.name > b.name ? 1 : -1));
+        return heros.sort((a, b) => (a.canFly > b.canFly ? 1 : -1));
       case 'color':
-        return heros.sort((a, b) => (a.name > b.name ? 1 : -1));
+        return heros.sort((a, b) => (a.color > b.color ? 1 : -1));
       default:
         return heros;
     }
