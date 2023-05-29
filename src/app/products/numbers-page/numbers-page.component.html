@@ -1,0 +1,25 @@
+<p-panel header="Numeric pipes" class="p-1">
+  <h1>
+    <p>Pipes included in angular</p>
+  </h1>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="net sales" subheader="sales from this year">
+      {{ totalSells | number : "1.2-2" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="brut sales" subheader="sales from this year">
+      {{ totalSells | currency : "MXN" : "symbol-narrow" : "1.6-6" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Percent win" subheader="sales from this year">
+      {{ percent | percent : "1.2-2" }}
+    </p-card>
+  </div>
+</div>
